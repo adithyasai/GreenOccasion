@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -29,6 +31,17 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
+
+<script>
+  // JavaScript functions to open and close the popup
+  function openPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
 
 <body>
 
@@ -58,16 +71,31 @@
     </div>
   </header><!-- End Header -->
 
+
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
+
+    <div id="popup" class="popup-container">
+      <!-- Content inside the popup -->
+      <div class="col-lg-6">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd5l4kT6Pu3L3090VbKhxyDaE7H0VX9mY6_9QYnvjhiKffuvA/viewform?embedded=true"
+          width="600" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+      <button class="btn-get-started" onclick="closePopup()">Close</button>
+    </div>
+
     <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
       <!-- Slide 1 -->
       <div class="carousel-item active">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Celebrate with Greenery</h2>
-          <p class="animate__animated animate__fadeInUp"> "Add a touch of nature to your special moments. Our carefully selected plants are the perfect companions for your celebrations. Choose from a variety of green wonders and make every occasion special."</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Start Planting</a>
+          <p class="animate__animated animate__fadeInUp"> "Add a touch of nature to your special moments. Our carefully
+            selected plants are the perfect companions for your celebrations. Choose from a variety of green wonders and
+            make every occasion special."</p>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp"
+            onclick="openPopup(); return false;">Take a Green Oath</a>
         </div>
       </div>
 
@@ -75,8 +103,11 @@
       <div class="carousel-item">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Eco-Friendly Celebrations</h2>
-          <p class="animate__animated animate__fadeInUp">"Join the movement towards sustainable celebrations. Embrace eco-conscious party planning with our green solutions. Reduce waste, lower your carbon footprint, and make a positive impact on the environment."</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Start Planting</a>
+          <p class="animate__animated animate__fadeInUp">"Join the movement towards sustainable celebrations. Embrace
+            eco-conscious party planning with our green solutions. Reduce waste, lower your carbon footprint, and make a
+            positive impact on the environment."</p>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp"
+            onclick="openPopup(); return false;">Take a Green Oath</a>
         </div>
       </div>
 
@@ -84,8 +115,11 @@
       <div class="carousel-item">
         <div class="carousel-container">
           <h2 class="animate__animated animate__fadeInDown">Plant Care Made Easy</h2>
-          <p class="animate__animated animate__fadeInUp"> "Keep your plants healthy and thriving with our user-friendly plant care app. Receive watering reminders, expert tips, and personalized care instructions. Ensure your green companions grow as your memories do."</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp">Start Planting</a>
+          <p class="animate__animated animate__fadeInUp"> "Keep your plants healthy and thriving with our user-friendly
+            plant care app. Receive watering reminders, expert tips, and personalized care instructions. Ensure your
+            green companions grow as your memories do."</p>
+          <a href="" class="btn-get-started animate__animated animate__fadeInUp"
+            onclick="openPopup(); return false;">Take a Green Oath</a>
         </div>
       </div>
 
@@ -111,7 +145,9 @@
             <div class="icon-box icon-box-pink">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
               <h4 class="title"><a href="">Plant Delivery</a></h4>
-              <p class="description">"We make it easy for you to bring the gift of life to any celebration. Whether it's a birthday, anniversary, or any special event, we deliver beautiful, handpicked plants right to your doorstep."</p>
+              <p class="description">"We make it easy for you to bring the gift of life to any celebration. Whether it's
+                a birthday, anniversary, or any special event, we deliver beautiful, handpicked plants right to your
+                doorstep."</p>
             </div>
           </div>
 
@@ -119,7 +155,8 @@
             <div class="icon-box icon-box-cyan">
               <div class="icon"><i class="bx bx-file"></i></div>
               <h4 class="title"><a href="">Plant Care App</a></h4>
-              <p class="description"> "Our user-friendly app guides you through the care and nurturing of your plants. Get watering reminders, expert tips, and ensure your plants thrive and grow as your memories do."</p>
+              <p class="description"> "Our user-friendly app guides you through the care and nurturing of your plants.
+                Get watering reminders, expert tips, and ensure your plants thrive and grow as your memories do."</p>
             </div>
           </div>
 
@@ -127,7 +164,9 @@
             <div class="icon-box icon-box-green">
               <div class="icon"><i class="bx twemojie-potted-plant"></i></div>
               <h4 class="title"><a href="">Occasion Planting</a></h4>
-              <p class="description">"We provide a wide variety of plant options suited for different occasions. From vibrant flowering plants for birthdays to elegant succulents for weddings, we've got the perfect green companions for your celebrations."</p>
+              <p class="description">"We provide a wide variety of plant options suited for different occasions. From
+                vibrant flowering plants for birthdays to elegant succulents for weddings, we've got the perfect green
+                companions for your celebrations."</p>
             </div>
           </div>
 
@@ -135,7 +174,9 @@
             <div class="icon-box icon-box-blue">
               <div class="icon"><i class="bx bx-world"></i></div>
               <h4 class="title"><a href="">Eco-friendly Celebrations</a></h4>
-              <p class="description">"By choosing plants over single-use decor, you contribute to a greener planet. Eco-conscious celebrations are not just a trend; they're a statement of your commitment to the environment."</p>
+              <p class="description">"By choosing plants over single-use decor, you contribute to a greener planet.
+                Eco-conscious celebrations are not just a trend; they're a statement of your commitment to the
+                environment."</p>
             </div>
           </div>
 
@@ -158,7 +199,10 @@
             <div class="icon-box">
               <div class="icon"><i class="bx bx-fingerprint"></i></div>
               <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
-              <p class="description">At Green Occasion, we've embarked on an extraordinary journey - a mission to plant 1 trillion trees by the year 2050. Our vision is to create a greener, healthier, and more sustainable world for all. We believe that each of us has a part to play in nurturing our planet, and that's why we're dedicated to making every occasion a green occasion</p>
+              <p class="description">At Green Occasion, we've embarked on an extraordinary journey - a mission to plant
+                1 trillion trees by the year 2050. Our vision is to create a greener, healthier, and more sustainable
+                world for all. We believe that each of us has a part to play in nurturing our planet, and that's why
+                we're dedicated to making every occasion a green occasion</p>
             </div>
 
           </div>
@@ -258,7 +302,8 @@
         <div class="row">
           <div class="col-lg-6">
             <h4>Our Newsletter</h4>
-            <p>Join us in celebrating life's moments with purpose, one plant at a time, as we work towards planting 1 trillion trees by 2050.</p>
+            <p>Join us in celebrating life's moments with purpose, one plant at a time, as we work towards planting 1
+              trillion trees by 2050.</p>
           </div>
           <div class="col-lg-6">
             <form action="" method="post">
@@ -308,7 +353,9 @@
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>About Green Occasion</h3>
-            <p>"At Green Occasion, we're dedicated to promoting eco-friendly celebrations that make a positive impact on the environment. We're driven by a passion for sustainability and a love for greenery, making us your partner in creating meaningful, eco-conscious moments." </p>
+            <p>"At Green Occasion, we're dedicated to promoting eco-friendly celebrations that make a positive impact on
+              the environment. We're driven by a passion for sustainability and a love for greenery, making us your
+              partner in creating meaningful, eco-conscious moments." </p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -328,7 +375,8 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
