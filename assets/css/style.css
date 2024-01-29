@@ -619,7 +619,9 @@ section {
   height: 70px;
   border-radius: 50px;
 }
-
+.services .icon-box i{
+  color: grey;
+}
 .services .icon {
   margin: 0 auto 20px auto;
   display: inline-block;
@@ -902,6 +904,11 @@ section {
 
 .about p:last-child {
   margin-bottom: 0;
+}
+
+.about img{
+  width: 150px;
+  height: 150px;
 }
 
 /*--------------------------------------------------------------
