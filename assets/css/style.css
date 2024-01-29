@@ -614,14 +614,19 @@ section {
   border: 1px solid #fff;
 }
 
+.services .icon-box img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+}
+
 .services .icon {
   margin: 0 auto 20px auto;
-  padding-top: 17px;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  width: 72px;
-  height: 72px;
+  width: 70px;
+  height: 70px;
 }
 
 .services .icon i {
@@ -1666,8 +1671,15 @@ section {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
 }
 
+.blog .entry-content img{
+  width: 350px;
+  height: 350px;
+
+}
+
 .blog .blog-author img {
-  width: 120px;
+  width: 80px;
+  height: 90px;
   margin-right: 20px;
 }
 

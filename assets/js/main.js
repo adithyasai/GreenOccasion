@@ -199,7 +199,4 @@
    */
   new PureCounter();
 
-    // JavaScript functions to open and close the popup
-    
-
 })()
