@@ -341,6 +341,10 @@ h6,
   display: block;
 }
 
+/*--------------------------------------------------------------
+# Pledge Section
+--------------------------------------------------------------*/
+
 #fixed-info {
   position: fixed;
   bottom: 0;
@@ -359,6 +363,16 @@ h6,
 
 #fixed-info .section-title{
   font-size: 40px;
+}
+/* CSS for mobile */
+@media (max-width: 768px) {
+  #fixed-info {
+      width: 100%; /* Adjust width for smaller screens */
+  }
+
+  #fixed-info .section-title {
+      font-size: 24px; /* Adjust font size for smaller screens */
+  }
 }
 /*--------------------------------------------------------------
 # Hero Section
