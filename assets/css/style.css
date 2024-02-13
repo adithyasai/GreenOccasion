@@ -341,6 +341,25 @@ h6,
   display: block;
 }
 
+#fixed-info {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 30%; /* Adjust width as needed */
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  z-index: 9999; 
+  text-align: center;
+}
+
+#fixed-info .container{
+  padding: 10px;/* Ensure it's above other content */
+
+}
+
+#fixed-info .section-title{
+  font-size: 40px;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -424,7 +443,7 @@ h6,
   opacity: 0.9;
 }
 
-#hero .btn-get-started {
+.btn-get-started {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -440,7 +459,7 @@ h6,
   border: 2px solid #05572F;
 }
 
-#hero .btn-get-started:hover {
+ .btn-get-started:hover {
   background: #05572F;
   color: #fff;
   text-decoration: none;
@@ -2186,7 +2205,7 @@ section {
   display: none;
   position: fixed;
   top: 50%;
-  left: 50%;
+  left: 40%;
   transform: translate(-50%, -50%);
   padding: 20px;
   background-color: #fff;
