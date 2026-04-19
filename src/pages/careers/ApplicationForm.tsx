@@ -60,7 +60,7 @@ export default function ApplicationForm({ roleTitle }: ApplicationFormProps) {
 
   if (submitted) {
     return (
-      <div className="bg-white rounded-3xl p-12 shadow-xl border border-gray-100 text-center">
+      <div className="bg-white rounded-3xl p-6 sm:p-12 shadow-xl border border-gray-100 text-center">
         <div className="w-20 h-20 mx-auto mb-6 bg-emerald-100 rounded-full flex items-center justify-center">
           <i className="ri-check-double-line text-4xl text-emerald-600"></i>
         </div>
@@ -79,7 +79,7 @@ export default function ApplicationForm({ roleTitle }: ApplicationFormProps) {
   }
 
   return (
-    <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100">
+    <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-gray-100">
       <h3 className="text-2xl font-bold text-gray-900 mb-2">Apply for this Role</h3>
       <p className="text-gray-600 mb-8">Fill out the form below and we'll get in touch with you.</p>
 

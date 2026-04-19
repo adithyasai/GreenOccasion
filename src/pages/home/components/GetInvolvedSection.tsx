@@ -23,13 +23,13 @@ export default function GetInvolvedSection() {
   const navigate = useNavigate();
 
   return (
-    <section id="get-involved" className="py-24 bg-gradient-to-b from-white to-teal-50">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
+    <section id="get-involved" className="py-12 sm:py-24 bg-gradient-to-b from-white to-teal-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-8 sm:mb-16">
           <div className="inline-block px-4 py-2 bg-teal-100 text-teal-700 rounded-full text-sm font-semibold mb-4">
             Careers &amp; Volunteering
           </div>
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
             Join Our Mission
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -37,11 +37,11 @@ export default function GetInvolvedSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
+        <div className="grid md:grid-cols-2 gap-4 sm:gap-8 max-w-5xl mx-auto mb-8 sm:mb-16">
           {roles.map((role) => (
             <div
               key={role.path}
-              className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100 hover:border-teal-300 transition-all hover:shadow-2xl cursor-pointer group"
+              className="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-gray-100 hover:border-teal-300 transition-all hover:shadow-2xl cursor-pointer group"
               onClick={() => navigate(role.path)}
             >
               <div className="flex items-start justify-between mb-6">
@@ -73,8 +73,8 @@ export default function GetInvolvedSection() {
           ))}
         </div>
 
-        <div className="bg-white rounded-3xl p-12 shadow-xl max-w-4xl mx-auto">
-          <div className="text-center mb-10">
+        <div className="bg-white rounded-3xl p-6 sm:p-12 shadow-xl max-w-4xl mx-auto">
+          <div className="text-center mb-6 sm:mb-10">
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Join Green Occasion?</h3>
             <p className="text-base text-gray-600">
               Be part of a movement that's making a real difference in the fight against climate change

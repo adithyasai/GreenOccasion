@@ -102,7 +102,7 @@ function PillarCard({
         }}
       />
 
-      <div className="relative bg-white rounded-3xl p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-shadow duration-500 overflow-hidden">
+      <div className="relative bg-white rounded-2xl sm:rounded-3xl p-6 sm:p-10 border border-gray-100 shadow-sm hover:shadow-xl transition-shadow duration-500 overflow-hidden">
         {/* Subtle background pattern */}
         <div
           className="absolute top-0 right-0 w-48 h-48 rounded-full opacity-5 -translate-y-12 translate-x-12 transition-all duration-500"
@@ -172,16 +172,16 @@ export default function WhatWeDoSection() {
   }, []);
 
   return (
-    <section id="what-we-do" className="py-28 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="what-we-do" className="py-14 sm:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
         {/* Section header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 sm:mb-20">
           <div className="inline-flex items-center space-x-2 px-4 py-2 bg-emerald-50 border border-emerald-200 text-emerald-700 rounded-full text-xs font-bold tracking-widest uppercase mb-5">
             <i className="ri-focus-3-line text-sm" />
             <span>What We Do</span>
           </div>
-          <h2 className="text-5xl font-bold text-gray-900 mb-5 leading-tight">
+          <h2 className="text-3xl sm:text-5xl font-bold text-gray-900 mb-5 leading-tight">
             Two Pillars.<br />
             <span className="text-emerald-600">One Mission.</span>
           </h2>
@@ -191,17 +191,17 @@ export default function WhatWeDoSection() {
         </div>
 
         {/* Stats row */}
-        <div className="grid grid-cols-3 gap-6 max-w-3xl mx-auto mb-20">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 max-w-3xl mx-auto mb-12 sm:mb-20">
           {[
             { value: 78, suffix: '%', label: 'Emission sources tracked', icon: 'ri-pie-chart-line' },
             { value: 120, suffix: '+', label: 'Organizations onboarded', icon: 'ri-building-line' },
             { value: 40, suffix: 'k', label: 'Tons CO₂ reduced', icon: 'ri-leaf-line' },
           ].map((stat) => (
-            <div key={stat.label} className="text-center p-6 rounded-2xl bg-gray-50 border border-gray-100">
+            <div key={stat.label} className="text-center p-4 sm:p-6 rounded-2xl bg-gray-50 border border-gray-100">
               <div className="w-10 h-10 flex items-center justify-center bg-emerald-100 rounded-xl mx-auto mb-3">
                 <i className={`${stat.icon} text-lg text-emerald-600`} />
               </div>
-              <div className="text-3xl font-bold text-gray-900 mb-1">
+              <div className="text-2xl sm:text-3xl font-bold text-gray-900 mb-1">
                 <AnimatedCounter target={stat.value} suffix={stat.suffix} />
               </div>
               <div className="text-xs text-gray-500">{stat.label}</div>
@@ -210,7 +210,7 @@ export default function WhatWeDoSection() {
         </div>
 
         {/* Pillar cards */}
-        <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto mb-20">
+        <div className="grid lg:grid-cols-2 gap-6 sm:gap-8 max-w-6xl mx-auto mb-12 sm:mb-20">
           <PillarCard
             pillar="Pillar 1"
             title="Carbon Awareness"
@@ -279,10 +279,10 @@ export default function WhatWeDoSection() {
                 >
                   <i className={`${step.icon} text-lg`} />
                 </div>
-                <span className={`text-sm font-bold transition-colors duration-300 ${i <= activeStep ? 'text-gray-900' : 'text-gray-400'}`}>
+                <span className={`text-xs sm:text-sm font-bold transition-colors duration-300 ${i <= activeStep ? 'text-gray-900' : 'text-gray-400'}`}>
                   {step.label}
                 </span>
-                <span className={`text-xs text-center mt-1 max-w-[120px] transition-colors duration-300 ${i <= activeStep ? 'text-gray-500' : 'text-gray-300'}`}>
+                <span className={`text-[10px] sm:text-xs text-center mt-1 max-w-[80px] sm:max-w-[120px] transition-colors duration-300 ${i <= activeStep ? 'text-gray-500' : 'text-gray-300'}`}>
                   {step.desc}
                 </span>
               </div>
@@ -290,8 +290,8 @@ export default function WhatWeDoSection() {
           </div>
 
           {/* Active step detail card */}
-          <div className="mt-10 bg-gradient-to-r from-teal-50 to-emerald-50 rounded-3xl p-8 border border-emerald-100 transition-all duration-500">
-            <div className="flex items-center space-x-4">
+          <div className="mt-8 sm:mt-10 bg-gradient-to-r from-teal-50 to-emerald-50 rounded-2xl sm:rounded-3xl p-5 sm:p-8 border border-emerald-100 transition-all duration-500">
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:space-x-4">
               <div className="w-14 h-14 flex items-center justify-center bg-emerald-600 rounded-2xl flex-shrink-0">
                 <i className={`${steps[activeStep].icon} text-2xl text-white`} />
               </div>

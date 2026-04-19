@@ -8,7 +8,7 @@ export default function VolunteerUXDesignerPage() {
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
       <div className="bg-gradient-to-br from-purple-600 to-indigo-600 text-white">
-        <div className="max-w-5xl mx-auto px-6 py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-16">
           <button
             onClick={() => navigate('/')}
             className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-8 transition-colors cursor-pointer"
@@ -16,9 +16,9 @@ export default function VolunteerUXDesignerPage() {
             <i className="ri-arrow-left-line"></i> Back to Home
           </button>
 
-          <div className="flex items-start gap-6">
-            <div className="w-20 h-20 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-2xl shrink-0">
-              <i className="ri-palette-line text-5xl text-white"></i>
+          <div className="flex items-start gap-4 sm:gap-6">
+            <div className="w-14 h-14 sm:w-20 sm:h-20 flex items-center justify-center bg-white/20 backdrop-blur-sm rounded-2xl shrink-0">
+              <i className="ri-palette-line text-3xl sm:text-5xl text-white"></i>
             </div>
             <div>
               <div className="flex items-center gap-3 mb-3">
@@ -29,7 +29,7 @@ export default function VolunteerUXDesignerPage() {
                   Remote
                 </span>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-3">Volunteer UX Designer</h1>
+              <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-3">Volunteer UX Designer</h1>
               <p className="text-lg text-white/90 max-w-2xl">
                 Design intuitive, beautiful interfaces that make climate data accessible to everyone.
               </p>
@@ -39,11 +39,11 @@ export default function VolunteerUXDesignerPage() {
       </div>
 
       {/* Content */}
-      <div className="max-w-5xl mx-auto px-6 py-12">
-        <div className="grid lg:grid-cols-3 gap-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+        <div className="grid lg:grid-cols-3 gap-6 sm:gap-10">
           {/* Left column — details */}
           <div className="lg:col-span-2 space-y-8">
-            <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100">
+            <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">About the Role</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
                 As a Volunteer UX Designer at Green Occasion, you'll shape how millions of people interact with climate
@@ -56,7 +56,7 @@ export default function VolunteerUXDesignerPage() {
               </p>
             </div>
 
-            <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100">
+            <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">What You'll Do</h2>
               <ul className="space-y-4">
                 {[
@@ -77,7 +77,7 @@ export default function VolunteerUXDesignerPage() {
               </ul>
             </div>
 
-            <div className="bg-white rounded-3xl p-10 shadow-xl border border-gray-100">
+            <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-gray-100">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Requirements</h2>
               <ul className="space-y-4">
                 {[

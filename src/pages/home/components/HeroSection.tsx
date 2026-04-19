@@ -198,7 +198,7 @@ const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden pt-24 pb-16"
+      className="relative min-h-screen bg-white flex flex-col items-center justify-center overflow-hidden pt-20 pb-10 sm:pt-24 sm:pb-16"
       onMouseMove={handleMouseMove}
     >
       <style>{`
@@ -261,7 +261,7 @@ const HeroSection = () => {
         className="relative z-10 mb-8"
         style={{ animation: 'fadeSlideUp 0.6s ease both 0.1s' }}
       >
-        <span className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-emerald-700 uppercase bg-emerald-50 border border-emerald-200 px-5 py-2 rounded-full">
+        <span className="inline-flex items-center gap-2 text-[10px] sm:text-xs font-bold tracking-widest text-emerald-700 uppercase bg-emerald-50 border border-emerald-200 px-3 sm:px-5 py-1.5 sm:py-2 rounded-full">
           <i className="ri-leaf-line" /> India&apos;s Carbon Intelligence Collective
         </span>
       </div>
@@ -273,8 +273,8 @@ const HeroSection = () => {
       >
         {/* Eyes row — close together, no text between */}
         <div className="flex items-end justify-center gap-2 mb-3">
-          <Eye size={90} delay={0} />
-          <Eye size={90} delay={400} />
+          <Eye size={60} delay={0} />
+          <Eye size={60} delay={400} />
         </div>
 
         {/* Tagline below eyes */}
@@ -285,11 +285,11 @@ const HeroSection = () => {
         </p>
 
         {/* Main headline */}
-        <h1 className="text-5xl md:text-7xl font-black text-slate-900 leading-tight tracking-tight text-center max-w-4xl px-4">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl font-black text-slate-900 leading-tight tracking-tight text-center max-w-4xl px-4">
           Engineering a{' '}
           <span className="gradient-text">Cooler Planet</span>
           <br />
-          <span className="text-2xl md:text-3xl font-semibold text-slate-400 mt-2 block">
+          <span className="text-base sm:text-2xl md:text-3xl font-semibold text-slate-400 mt-2 block">
             One Metric at a Time
           </span>
         </h1>
@@ -297,7 +297,7 @@ const HeroSection = () => {
 
       {/* ── Sub-headline ── */}
       <p
-        className="relative z-10 text-base md:text-lg text-slate-500 max-w-2xl mx-auto text-center px-6 leading-relaxed mb-10"
+        className="relative z-10 text-sm sm:text-base md:text-lg text-slate-500 max-w-2xl mx-auto text-center px-4 sm:px-6 leading-relaxed mb-8 sm:mb-10"
         style={{ animation: 'fadeSlideUp 0.7s ease both 0.35s' }}
       >
         <strong className="text-emerald-600">Green Occasion</strong> is an Indian non-profit collective of volunteers building open standards and tech solutions to{' '}
@@ -306,7 +306,7 @@ const HeroSection = () => {
 
       {/* ── CTA Buttons ── */}
       <div
-        className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-4 mb-16"
+        className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 sm:mb-16"
         style={{ animation: 'fadeSlideUp 0.7s ease both 0.45s' }}
       >
         <button
@@ -335,7 +335,7 @@ const HeroSection = () => {
         <p className="text-center text-xs font-bold text-slate-400 uppercase tracking-widest mb-5">
           Carbon Emission Sources We Track &amp; Measure
         </p>
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-3">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-2 sm:gap-3">
           {sources.map((s) => (
             <SourcePill key={s.label} {...s} />
           ))}
@@ -348,7 +348,7 @@ const HeroSection = () => {
         className="relative z-10 w-full max-w-3xl mx-auto px-6"
         style={{ animation: 'fadeSlideUp 0.7s ease both 0.65s' }}
       >
-        <div className="relative rounded-3xl overflow-hidden border border-slate-100 bg-slate-50 px-8 py-7 flex flex-col md:flex-row items-center gap-6">
+        <div className="relative rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-100 bg-slate-50 px-4 sm:px-8 py-5 sm:py-7 flex flex-col md:flex-row items-center gap-4 sm:gap-6">
           {/* spinning ring decoration */}
           <div className="absolute -top-6 -right-6 pointer-events-none" style={{ width: 100, height: 100 }}>
             {/* outer ring */}
@@ -384,14 +384,14 @@ const HeroSection = () => {
           </div>
 
           <div className="flex items-end gap-1 shrink-0">
-            <span className="text-7xl font-black text-emerald-600 tabular-nums leading-none">{counted}</span>
-            <span className="text-4xl font-black text-emerald-600 mb-1">%</span>
+            <span className="text-4xl sm:text-7xl font-black text-emerald-600 tabular-nums leading-none">{counted}</span>
+            <span className="text-2xl sm:text-4xl font-black text-emerald-600 mb-1">%</span>
           </div>
 
           <div className="hidden md:block w-px h-16 bg-slate-200" />
 
           <div className="flex-1 text-center md:text-left">
-            <p className="text-slate-800 text-xl font-bold leading-snug">
+            <p className="text-slate-800 text-base sm:text-xl font-bold leading-snug">
               of global emissions could be reduced
             </p>
             <p className="text-slate-500 text-sm mt-1">
