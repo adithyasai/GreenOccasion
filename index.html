@@ -1,416 +1,72 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Green Occasion</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/GreenOccasion.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-</head>
-
-<script>
-  // JavaScript functions to open and close the popup
-  function openPopup() {
-    document.getElementById("popup").style.display = "block";
-  }
-
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-  }
-</script>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container d-flex justify-content-between align-items-center">
-
-      <div class="logo">
-        <!-- <h1 class="text-light"><a href="index.html"><span>Green Occasion</span></a></h1> -->
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <a href="index.html"><img src="assets/img/GreenOccasion.svg" alt="" class="img-fluid"></a>
-      </div>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="active " href="index.html">Home</a></li>
-          <li><a href="about.html">About Us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <!-- <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="team.html">Team</a></li> -->
-          <li><a href="blog.html">Blog</a></li> 
-          <li><a href="careers.html">Careers</a></li> 
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-
-  <div id="fixed-info">
-    <div class="container">
-      <h2 class="section-title">Join the Green Revolution!</h2>
-      <p class="section-description">Are you ready to make a difference? Take the pledge to plant trees and contribute to a greener planet!</p>
-      <a href="#popup" class="btn-get-started" onclick="openPopup(); return false;">Take the Pledge</a>
-    </div>
-</div>
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex justify-cntent-center align-items-center">
-
-    <div id="popup" class="popup-container">
-      <!-- Content inside the popup -->
-      <div class="col-lg-6">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSd5l4kT6Pu3L3090VbKhxyDaE7H0VX9mY6_9QYnvjhiKffuvA/viewform?embedded=true"
-          width="600" height="400" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>
-      <button class="btn-get-started" onclick="closePopup()">Close</button>
-    </div>
-
-    <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-
-      <!-- Slide 1 -->
-      <div class="carousel-item active">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Breathe Life into Your Celebrations</h2>
-          <p class="animate__animated animate__fadeInUp"> "Ditch the ordinary and infuse your special occasions with the
-            magic of plants. Discover unique greenery arrangements perfect for weddings, birthdays, holidays, or any
-            event you want to make truly memorable.
-            ."</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp"
-            onclick="openPopup(); return false;">Take a Green Oath</a>
-        </div>
-      </div>
-
-      <!-- Slide 2 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Celebrate Sustainably</h2>
-          <p class="animate__animated animate__fadeInUp">"Imagine throwing a party that bursts with joy, laughter, and
-            memories, all while leaving a gentle footprint on our planet. That's the magic of sustainable celebrations,
-            and at Green Occasion, we're here to help you make it happen.
-            ."</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp"
-            onclick="openPopup(); return false;">Take a Green Oath</a>
-        </div>
-      </div>
-
-      <!-- Slide 3 -->
-      <div class="carousel-item">
-        <div class="carousel-container">
-          <h2 class="animate__animated animate__fadeInDown">Say Goodbye to Wilting Wonders</h2>
-          <p class="animate__animated animate__fadeInUp"> "Download our app and watch your plant parenthood blossom. No
-            more brown thumbs, crispy leaves, or frantic Googling! Get personalised watering reminders, expert tips, and
-            instant plant ID - all in one handy (and adorable) app."</p>
-          <a href="" class="btn-get-started animate__animated animate__fadeInUp"
-            onclick="openPopup(); return false;">Take a Green Oath</a>
-        </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
-      </a>
-
-    </div>
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= Services Section ======= -->
-    <section class="services">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="icon-box">
-              <div class="icon"><img src="assets/img/service1.jpeg" alt="" class="img-fluid"></div>
-              <h4 class="title"><a href="">Plant Delivery</a></h4>
-              <p class="description">"Forget boring gifts that gather dust. Celebrate life's special moments with
-                something truly unique and vibrant: a handpicked plant delivered straight to their door! Ditch the
-                impersonal store run and send a living expression of love, friendship, or simply good vibes! Let's make
-                their special day truly unforgettable with the gift of life.
-                ."</p>
-                <br>
-                <br>
-                <i>Coming Soon....</i>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon-box ">
-              <div class="icon"><img src="assets/img/service2.jpeg" alt="" class="img-fluid"></div>
-              <h4 class="title"><a href="">Plant Care App</a></h4>
-              <p class="description"> "No more plant parenthood panic! Say goodbye to wilting leaves and crispy fronds.
-                Our super-friendly app is your secret weapon for raising thriving, happy plants!
-                ."</p>
-                <br>
-                <br>
-                <i>Coming Soon....</i>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box ">
-              <div class="icon"><img src="assets/img/service3.jpeg" alt="" class="img-fluid"></div>
-              <h4 class="title"><a href="">Occasion Planting</a></h4>
-              <p class="description">"Forget boring gifts that gather dust. Celebrate life's special moments with
-                something truly unique and vibrant: a handpicked plant delivered straight to their door! Ditch the
-                impersonal store run and send a living expression of love, friendship, or simply good vibes! Let's make
-                their special day truly unforgettable with the gift of life."</p>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon-box ">
-              <div class="icon"><img src="assets/img/service4.jpeg" alt="" class="img-fluid"></div>
-              <h4 class="title"><a href="">Eco-friendly Celebrations</a></h4>
-              <p class="description">"Tired of decorations destined for the landfill? This year, say "hasta la vista!"
-                to wasteful party favors and embrace eco-conscious celebrations that bloom with life and meaning."</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12 p-0">
-            <img src="assets/img/mission.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-12 d-flex flex-column justify-content-center p-5">
-
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-              <!-- <h4 class="title"><a href="">Lorem Ipsum</a></h4> -->
-              <p class="description">At Green Occasion, we celebrate more than milestones – we plant the seeds of a
-                greener future. Join our trillion-tree mission by choosing beautiful plants for your celebrations. Each
-                one becomes a symbol of your commitment, contributing to cleaner air, healthier ecosystems, and a
-                thriving planet for generations to come. Celebrate consciously, grow with us, and make every occasion a
-                green occasion!
-              </p>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Features Section ======= -->
-    <!-- <section class="features">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Features</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5">
-            <img src="assets/img/features-1.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-4">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <ul>
-              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="assets/img/features-2.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Corporis temporibus maiores provident</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5">
-            <img src="assets/img/features-3.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5">
-            <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
-            <ul>
-              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="assets/img/features-4.svg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 pt-5 order-2 order-md-1">
-            <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Features Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h4>Our Newsletter</h4>
-            <p>Join our newsletter journey and celebrate life's moments with purpose, one plant at a time! Uncover eco-friendly inspiration for your celebrations, get plant-powered tips, and be part of our incredible mission to plant 1 trillion trees by 2035. </p>
-
-          </div>
-          <div class="col-lg-6">
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="Blog_Service1.html">Plant Delivery</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Blog_Service2.html">Plant Care App</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Blog_Service3.html">Occassion Planning</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="Blog_Service4.html">Eco Friendly Celebrations</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
-            <p>
-              Green Occasion <br>
-              Hyderabad, IN 500084<br>
-              India <br><br>
-              <strong>Phone:</strong> 8333077617<br>
-              <strong>Email:</strong> adithyasai7979@gmail.com<br>
-            </p>
-
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-info">
-            <h3>About Green Occasion</h3>
-            <p>Green Occasion curates joyful celebrations with lasting impact.  Driven by sustainability and love for greenery, we're your partner in meaningful, eco-conscious moments that bloom beyond the event. Join us!
-
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="https://www.linkedin.com/company/green-occasion/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div class="copyright">
-        &copy; 2024 Copyright <strong><span>Green Occasion</span></strong>. All Rights Reserved
-      </div>
-    </div>
-  </footer><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
-</body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Green Occasion - Engineering a Cooler Planet, One Metric at a Time</title>
+    <meta name="description" content="Green Occasion is an Indian non-profit collective of volunteers building open standards and tech solutions to measure, track, and eliminate global carbon emissions. Join us in creating a sustainable future through data-driven climate action." />
+    <meta name="keywords" content="carbon emissions, climate change, sustainability, non-profit, open source, carbon tracking, emission reduction, environmental technology, green tech, climate action" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://greenoccasion.org/" />
+    
+    <!-- Last Modified -->
+    <meta name="last-modified" content="2024-01-15" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Green Occasion - Engineering a Cooler Planet" />
+    <meta property="og:description" content="Indian non-profit building open standards and tech solutions to measure and eliminate global carbon emissions" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://greenoccasion.org/" />
+    <meta property="og:image" content="https://static.readdy.ai/image/2eefbf55cd16506717139f8211e944ba/de54765b5e87f856bdaf9202dd985b8d.png" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Green Occasion - Engineering a Cooler Planet" />
+    <meta name="twitter:description" content="Indian non-profit building open standards and tech solutions to measure and eliminate global carbon emissions" />
+    <meta name="twitter:image" content="https://static.readdy.ai/image/2eefbf55cd16506717139f8211e944ba/de54765b5e87f856bdaf9202dd985b8d.png" />
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="IN" />
+    <meta name="geo.placename" content="India" />
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Green Occasion",
+      "description": "Indian non-profit collective building open standards and tech solutions to measure, track, and eliminate global carbon emissions",
+      "url": "https://greenoccasion.org/",
+      "logo": "https://static.readdy.ai/image/2eefbf55cd16506717139f8211e944ba/de54765b5e87f856bdaf9202dd985b8d.png",
+      "foundingLocation": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        }
+      },
+      "sameAs": [],
+      "nonprofitStatus": "Nonprofit"
+    }
+    </script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
